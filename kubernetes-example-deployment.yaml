@@ -15,7 +15,7 @@ spec:
         app: kubernetes-example
     spec:
       containers:
-        - name: kubernetes-example-test
+        - name: kubernetes-example
           image: kubernetes.jar:latest
           imagePullPolicy: Never
           ports:

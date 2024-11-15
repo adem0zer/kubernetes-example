@@ -28,7 +28,7 @@ pipeline {
             }
             steps {
                 sh " kubectl get nodes "
-                sh " kubectl set image deployment/simple-java-deployment simple-java-test=kubernetes.jar:latest "
+                sh " kubectl set image deployment/kubernetes-example-deployment kubernetes-example=kubernetes.jar:latest "
             }
         }
     }
