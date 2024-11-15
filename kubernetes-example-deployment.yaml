@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kubernetes-example-deployment
   labels:
-    app: 
+    app:
 spec:
   replicas: 3
   selector:
@@ -19,7 +19,7 @@ spec:
           image: kubernetes.jar:latest
           imagePullPolicy: Never
           ports:
-            - containerPort: 8097
+            - containerPort: 8090
           env:
             - name: JAVA_OPTS
               value: "-Dspring.profiles.active=test"
